@@ -19,7 +19,7 @@
   background-color: var(--c3);
   display: block;
   margin: 0 auto;
-  margin-top: 5px;
+
   border-radius: 10px;
   opacity: 0;
   transition: 0.5s;

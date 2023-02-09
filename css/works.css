@@ -25,9 +25,19 @@
 
 .img-work {
   border-radius: 16px;
+  overflow: hidden;
+  flex-shrink: 1;
+}
+
+.img-work img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 .content-work {
   align-self: end;
+  flex-shrink: 0;
 }
 
 .subtitle-work {
@@ -42,3 +52,19 @@
   display: block;
   margin-bottom: 32px;
 }
+
+@media (max-width: 768px) {
+  .work-container {
+    grid-template-columns: 1fr;
+  }
+
+  .work-container:nth-child(even) .content-work {
+    grid-column: initial;
+    grid-row: initial;
+  }
+
+  .work-container:nth-child(even) .img-work {
+    grid-column: initial;
+    grid-row: initial;
+  }
+} ;

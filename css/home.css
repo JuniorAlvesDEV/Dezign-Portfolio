@@ -2,3 +2,9 @@
   text-align: center;
   margin: 316px 0;
 }
+
+@media (max-width: 1000px) {
+  .intro {
+    margin: 158px 0;
+  }
+} ;
